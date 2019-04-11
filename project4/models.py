@@ -16,8 +16,8 @@ class Patient(models.Model):
     doctor = models.ForeignKey(
         Doctor, on_delete=models.CASCADE, related_name='patients')
     time = models.CharField(max_length=100, default='no preferred time')
-    date = models.CharField(max_length=100, default='no preferred date')
-    preview_url = models.CharField(max_length=200, null=True)
+    date = models.CharField(max_length=100, default=' / /')
+    description = models.CharField(max_length=200, default='')
 
     def __str__(self):
         return self.title
