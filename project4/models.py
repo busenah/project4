@@ -10,7 +10,7 @@ class Doctor(models.Model):
         max_length=100)
     address = models.CharField(
         max_length=100)
-    photo_url = models.TextField()
+    # photo_url = models.TextField()
 
     def __str__(self):
         return self.name
